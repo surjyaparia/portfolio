@@ -38,7 +38,7 @@ const Footer = () => {
           </IconButton>
           <IconButton
             component="a"
-            href="/contact#/contact"
+            href="/portfolio/#/contact"
             sx={{ ...iconStyle, '&:hover': iconHoverStyle }}
           >
             <FaEnvelope />
