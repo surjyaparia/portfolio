@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Projects from './components/Projects';
@@ -12,9 +12,21 @@ import ChatBot from './components/ChatBot';
 import NotFound from './pages/NotFound';
 import './App.css';
 
+// Scroll to top on route change
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
 function App() {
   return (
-    <Router basename='/'>
+    <HashRouter basename="/">
+      <ScrollToTop />
       <div className="app">
         <Navbar />
         <main className="main-content">
@@ -33,7 +45,7 @@ function App() {
         <Footer />
         <ChatBot/>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 

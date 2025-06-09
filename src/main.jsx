@@ -1,7 +1,19 @@
-import { StrictMode, useEffect } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode, useEffect } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import App from './App.jsx';
+import { ErrorBoundary } from 'react-error-boundary';
+
+// Error Fallback component
+function ErrorFallback({ error, resetErrorBoundary }) {
+  return (
+    <div role="alert" style={{ padding: '20px', textAlign: 'center' }}>
+      <h2>Something went wrong</h2>
+      <pre style={{ color: 'red' }}>{error.message}</pre>
+      <button onClick={resetErrorBoundary}>Try again</button>
+    </div>
+  );
+}
 
 // Security utility functions
 const preventDefault = (e) => {
@@ -54,8 +66,23 @@ if (typeof window !== 'undefined') {
   initSecurity();
 }
 
-createRoot(document.getElementById('root')).render(
+// Create root element
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+// Wrap the app with ErrorBoundary
+root.render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <ErrorBoundary
+      FallbackComponent={ErrorFallback}
+      onReset={() => window.location.reload()}
+    >
+      <App />
+    </ErrorBoundary>
+  </StrictMode>
+);
+
+// Log any unhandled promise rejections
+window.addEventListener('unhandledrejection', (event) => {
+  console.error('Unhandled promise rejection:', event.reason);
+});
