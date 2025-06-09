@@ -135,7 +135,7 @@ const Contact = () => {
           <IconButton component="a" href="https://twitter.com/yourusername" target="_blank" rel="noopener" color="inherit">
             <FaTwitter />
           </IconButton>
-          <IconButton component="a" href="/portfolio/#/contact" color="inherit">
+          <IconButton component="a" href="/portfolio/#/contact " color="inherit">
             <FaEnvelope />
           </IconButton>
         </Stack>
