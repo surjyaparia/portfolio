@@ -6,6 +6,7 @@ import React from 'react';
 const certificates = [
   { name: 'Getting Started with Artificial Intelligence', issuer: 'IBM', image: 'https://res.cloudinary.com/ddwglz4bx/image/upload/v1748591053/vlt2ou75cr0jh8kylbis.jpg' },
   { name: ' Artificial Intelligence Fundamentals', issuer: 'IBM', image: 'https://res.cloudinary.com/ddwglz4bx/image/upload/v1748591576/vuki56qroxwplobewdxj.jpg' },
+  { name: ' AI-ML Virtual Internship', issuer: 'EduSkills', image: 'https://res.cloudinary.com/ddwglz4bx/image/upload/v1749703673/hngjr7mqpbkt3fhuvucv.jpg' },
 ];
 
 const cardVariants = {
