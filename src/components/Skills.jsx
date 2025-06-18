@@ -77,9 +77,15 @@ const Skills = () => {
                       transform: 'translateY(-5px)',
                       boxShadow: `0 8px 32px 0 ${skill.color}66`,
                     },
-                    cursor: skill.name === 'Data Structures & Algorithms' ? 'pointer' : 'default',
+                    cursor: skill.name === 'Data Structures & Algorithms' || skill.name === 'Competitive Programming' ? 'pointer' : 'default',
                   }}
-                  onClick={() => skill.name === 'Data Structures & Algorithms' && window.open('https://leetcode.com/u/surjyaparia_123/', '_blank')}
+                  onClick={() => {
+                    if (skill.name === 'Data Structures & Algorithms') {
+                      window.open('https://leetcode.com/u/surjyaparia_123/', '_blank');
+                    } else if (skill.name === 'Competitive Programming') {
+                      window.open('https://www.codechef.com/users/surjyaparia', '_blank');
+                    }
+                  }}
                 >
                   <Box mb={1}>{skill.icon}</Box>
                   {skill.name}
