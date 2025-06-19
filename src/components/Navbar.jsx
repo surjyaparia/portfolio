@@ -119,27 +119,48 @@ const Navbar = () => {
                 onClose={toggleDrawer(false)}
                 PaperProps={{
                   sx: {
-                    background: 'rgba(255,255,255,0.95)',
+                    width: '50%',
+                    maxWidth: '300px',
+                    background: 'rgba(255,255,255,0.98)',
                     backdropFilter: 'blur(16px)',
+                    boxShadow: '-2px 0 10px rgba(0,0,0,0.1)',
+                    height: 'auto',
+                    borderTopLeftRadius: '12px',
+                    borderBottomLeftRadius: '12px',
+                    mt: '64px',
+                    position: 'fixed',
+                    top: 0,
+                    right: 0,
+                    '&:focus': {
+                      outline: 'none',
+                    },
+                  },
+                }}
+                sx={{
+                  '& .MuiBackdrop-root': {
+                    backgroundColor: 'transparent',
                   },
                 }}
               >
                 <motion.div
-                  initial={{ x: 200, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  exit={{ x: 200, opacity: 0 }}
-                  transition={{ type: 'spring', stiffness: 120, damping: 18 }}
+                  initial={{ x: '100%' }}
+                  animate={{ x: 0 }}
+                  exit={{ x: '100%' }}
+                  transition={{ type: 'tween', duration: 0.15, ease: 'easeInOut' }}
                   style={{ height: '100%' }}
                 >
-                  <List sx={{ width: 220, mt: 4 }}>
+                  <List sx={{ width: '100%', py: 2, px: 2 }}>
                     {navLinks.map((link) => (
                       <ListItem
-                        button
                         key={link.name}
                         component={Link}
                         to={link.path}
-                        onClick={toggleDrawer(false)}
+                        onClick={() => setDrawerOpen(false)}
                         sx={{
+                          display: 'block',
+                          cursor: 'pointer',
+                          padding: '8px 16px',
+                          textDecoration: 'none',
                           color:
                             location.pathname === link.path
                               ? 'primary.main'

@@ -12,10 +12,26 @@ const ChatBot = () => {
   const messagesEndRef = useRef(null);
   const chatWindowRef = useRef(null);
   const chatToggleRef = useRef(null);
+  const inputRef = useRef(null);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  // Focus the input when the chat opens
+  useEffect(() => {
+    if (isOpen) {
+      // Use requestAnimationFrame to ensure the chat window is visible
+      // and the input is in the DOM before focusing
+      const focusTimer = requestAnimationFrame(() => {
+        const timer = setTimeout(() => {
+          inputRef.current?.focus({ preventScroll: true });
+        }, 50);
+        return () => clearTimeout(timer);
+      });
+      return () => cancelAnimationFrame(focusTimer);
+    }
+  }, [isOpen]);
 
   // Toggle chat handler
   const toggleChat = useCallback((e) => {
@@ -137,6 +153,7 @@ const ChatBot = () => {
         </div>
         <form className="chatbot-input" onSubmit={handleSendMessage}>
           <input
+            ref={inputRef}
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
