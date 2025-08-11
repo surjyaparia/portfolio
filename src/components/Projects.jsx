@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'Instagram Clone',
-    description: 'A clone of Instagram with a focus on user authentication, image upload, and social features.',
-    image: 'https://res.cloudinary.com/ddwglz4bx/image/upload/v1748592084/fu41eqeppl6qd4shxfjn.jpg',
+    title: 'J.A.R.V.I.S',
+    description: 'AI-powered personal voice assistant built with Python for smart automation.',
+    image: 'https://res.cloudinary.com/ddwglz4bx/image/upload/v1754895387/Screenshot_2025-08-11_122525_naxlj6.png',
     link: '/project/1',
-    github: 'https://github.com/surjyaparia/InstagramClone',
+    github: 'https://github.com/surjyaparia/J.A.R.V.I.S',
   },
   {
     title: 'Wanderlust',
@@ -16,6 +16,20 @@ const projects = [
     image: 'https://res.cloudinary.com/ddwglz4bx/image/upload/v1748595991/knncexww5ryv4anfs75a.jpg',
     link: '/project/2',
     github: 'https://github.com/surjyaparia/Wanderlust',
+  },
+  {
+    title: 'GetMeAChai',
+    description: 'GetMeAChai – a Next.js-based app for seamlessly collecting online support and donations.',
+    image: 'https://res.cloudinary.com/ddwglz4bx/image/upload/v1754893925/Screenshot_2025-08-11_120136_hbz1kf.png',
+    link: '/project/3',
+    github: 'https://github.com/surjyaparia/Get-Me-A-Chai',
+  },
+  {
+    title: 'Instagram Clone',
+    description: 'A clone of Instagram with a focus on user authentication, image upload, and social features.',
+    image: 'https://res.cloudinary.com/ddwglz4bx/image/upload/v1748592084/fu41eqeppl6qd4shxfjn.jpg',
+    link: '/project/4',
+    github: 'https://github.com/surjyaparia/InstagramClone',
   },
 ];
 

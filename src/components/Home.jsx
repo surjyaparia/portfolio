@@ -25,7 +25,7 @@ const Home = () => {
           </Typography>
           <Typography variant="h5" color="text.secondary" paragraph>
             A passionate Full Stack Developer crafting beautiful and functional web experiences.<br/>
-            <span style={{color:'#1976d2', fontWeight:600}}>DSA & CP Enthusiast:</span> Solved 400+ DSA problems on LeetCode. I love tackling algorithmic challenges and preparing for coding interviews at top tech companies.
+            <span style={{color:'#1976d2', fontWeight:600}}>DSA & CP Enthusiast:</span> Solved 400+ DSA problems on LeetCode. I love tackling algorithmic challenges. {/*and preparing for coding interviews at top tech companies. */}
           </Typography>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} justifyContent={{ xs: 'center', md: 'flex-start' }}>
             <Button

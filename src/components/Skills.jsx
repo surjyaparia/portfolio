@@ -1,7 +1,8 @@
 import { Box, Typography, Grid, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt, FaGitAlt, FaDocker, FaJsSquare, FaDatabase, FaTrophy } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiCplusplus, SiLeetcode, SiNumpy, SiPandas } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaDocker, FaJsSquare, FaDatabase, FaTrophy } from 'react-icons/fa';
+import { SiMongodb, SiExpress, SiCplusplus, SiLeetcode, SiNumpy, SiPandas, SiNextdotjs } from 'react-icons/si';
+import { FaChartLine, FaChartArea } from 'react-icons/fa';
 
 const topSkills = [
   { name: 'Data Structures & Algorithms', color: '#FFA116', icon: <SiLeetcode size={38} color="#FFA116" /> },
@@ -9,18 +10,24 @@ const topSkills = [
 ];
 
 const otherSkills = [
+  { name: 'C', color: '#5C6BC0', icon: <SiCplusplus size={38} color="#5C6BC0" /> },
   { name: 'C++', color: '#00599C', icon: <SiCplusplus size={38} color="#00599C" /> },
+  { name: 'HTML', color: '#e34c26', icon: <FaHtml5 size={38} color="#e34c26" /> },
+  { name: 'CSS', color: '#1572b6', icon: <FaCss3Alt size={38} color="#1572b6" /> },
   { name: 'JavaScript', color: '#f7df1e', icon: <FaJsSquare size={38} color="#f7df1e" /> },
-  { name: 'React', color: '#61dafb', icon: <FaReact size={38} color="#61dafb" /> },
   { name: 'Node.js', color: '#8cc84b', icon: <FaNodeJs size={38} color="#8cc84b" /> },
+  { name: 'Express', color: '#000000', icon: <SiExpress size={38} color="#000000" /> },
+  { name: 'MySQL', color: '#00758F', icon: <FaDatabase size={38} color="#00758F" /> },
+  { name: 'MongoDB', color: '#47a248', icon: <SiMongodb size={38} color="#47a248" /> },
+  { name: 'React', color: '#61dafb', icon: <FaReact size={38} color="#61dafb" /> },
+  { name: 'Next.js', color: '#000000', icon: <SiNextdotjs size={38} color="#000000" /> },
   { name: 'Python', color: '#3776ab', icon: <FaPython size={38} color="#3776ab" /> },
   { name: 'NumPy', color: '#013243', icon: <SiNumpy size={38} color="#013243" /> },
   { name: 'Pandas', color: '#150458', icon: <SiPandas size={38} color="#150458" /> },
-  { name: 'MongoDB', color: '#47a248', icon: <SiMongodb size={38} color="#47a248" /> },
-  { name: 'Express', color: '#000000', icon: <SiExpress size={38} color="#000000" /> },
-  { name: 'HTML', color: '#e34c26', icon: <FaHtml5 size={38} color="#e34c26" /> },
-  { name: 'CSS', color: '#1572b6', icon: <FaCss3Alt size={38} color="#1572b6" /> },
+  { name: 'Matplotlib', color: '#11557c', icon: <FaChartLine size={38} color="#11557c" /> },
+  { name: 'Seaborn', color: '#5b8cbc', icon: <FaChartArea size={38} color="#5b8cbc" /> },
   { name: 'Git', color: '#f34f29', icon: <FaGitAlt size={38} color="#f34f29" /> },
+  { name: 'GitHub', color: '#181717', icon: <FaGithub size={38} color="#181717" /> },
   { name: 'Docker', color: '#2496ed', icon: <FaDocker size={38} color="#2496ed" /> },
 ];
 
@@ -81,9 +88,9 @@ const Skills = () => {
                   }}
                   onClick={() => {
                     if (skill.name === 'Data Structures & Algorithms') {
-                      window.open('https://leetcode.com/u/surjyaparia_123/', '_blank');
+                      window.open('https://leetcode.com/u/xyz/', '_blank');
                     } else if (skill.name === 'Competitive Programming') {
-                      window.open('https://www.codechef.com/users/surjyaparia', '_blank');
+                      window.open('https://www.codechef.com/users/xyz', '_blank');
                     }
                   }}
                 >

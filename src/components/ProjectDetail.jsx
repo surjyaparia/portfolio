@@ -3,9 +3,72 @@ import { Box, Typography, Button, Container } from '@mui/material';
 
 const projectDetails = {
   1: {
+    title: 'J.A.R.V.I.S',
+    description: 'An AI-powered personal voice assistant built with Python, capable of executing commands, fetching information, and automating daily tasks.',
+    image: 'https://i.gifer.com/Mr3W.gif',
+    github: 'https://github.com/surjyaparia/J.A.R.V.I.S',
+    demo: 'https://jarvis-it6z.onrender.com/',
+    technologies: [
+      'Python',
+      'Flask for backend API',
+      'SpeechRecognition for voice commands',
+      'Pyttsx3 for text-to-speech',
+      'APIs for fetching data (e.g., weather, news, YouTube)',
+    ],
+    features: [
+      'Voice command recognition',
+      'Text-to-speech responses',
+      'Play YouTube videos or music',
+      'Send WhatsApp messages',
+      'Others'
+    ],
+  },
+
+  2: {
+    title: 'Wanderlust',
+    description: 'Wanderlust is a web app for discovering and sharing travel destinations with user reviews.',
+    image: 'https://i.pinimg.com/originals/50/03/fe/5003fef95b56794f052de80332eda3b2.gif',
+    github: 'https://github.com/surjyaparia/Wanderlust',
+    demo: 'https://wanderlust-onoc.onrender.com/',
+    technologies: [
+      'Frontend: HTML, CSS, JavaScript, EJS',
+      'Backend: Node.js, Express.js',
+      'Database: MongoDB',
+      'Architecture: MVC Pattern',
+    ],
+    features: [
+      'Add new travel spots with descriptions and images',
+      'Share reviews and rate destinations',
+      'User authentication (register/login/logout)',
+      'Responsive design for all devices',
+    ],
+  },
+
+  3: {
+    title: 'GetMeAChai',
+    description: 'GetMeAChai – a Next.js-based app for seamlessly collecting online support and donations.',
+    image: 'https://media.tenor.com/fK_mqBr8xGIAAAAj/coffee-lover.gif',
+    github: 'https://github.com/surjyaparia/Get-Me-A-Chai',
+    demo: 'https://get-me-a-chai-vzju.onrender.com/',
+    technologies: [
+      'Next.js',
+      'Tailwind CSS',
+      'NextAuth for authentication',
+      'Razorpay API for payments',
+      'MongoDB for database management',
+    ],
+    features: [
+      'User authentication (login/register)',
+      'Accept payments via Razorpay',
+      'Responsive and mobile-friendly UI',
+      'Profile and dashboard management'
+    ],
+  },
+
+  4: {
     title: 'Instagram Clone',
     description: 'A clone of Instagram with a focus on user authentication, image upload, and social features.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg',
+    image: 'https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyMTMydWFneTBoaWUzaXVpdjNlYjNyNzY1NWt4dDkwanhnenlvcHo5ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/uo6rcjwHSAFsQ/source.gif',
     github: 'https://github.com/surjyaparia/InstagramClone',
     demo: 'https://instagram-x3e1.onrender.com',
     technologies: [
@@ -21,25 +84,6 @@ const projectDetails = {
       'Like and comment on posts',
       'Follow/unfollow users',
       'Profile management',
-    ],
-  },
-  2: {
-    title: 'Wanderlust',
-    description: 'Wanderlust is a web app for discovering and sharing travel destinations with user reviews.',
-    image: 'https://png.pngtree.com/png-clipart/20230918/original/pngtree-simple-compass-icon-for-web-and-mobile-ui-vector-png-image_12371241.png',
-    github: 'https://github.com/surjyaparia/Wanderlust',
-    demo: 'https://wanderlust-onoc.onrender.com/',
-    technologies: [
-      'Frontend: HTML, CSS, JavaScript, EJS',
-      'Backend: Node.js, Express.js',
-      'Database: MongoDB',
-      'Architecture: MVC Pattern',
-    ],
-    features: [
-      'Add new travel spots with descriptions and images',
-      'Share reviews and rate destinations',
-      'User authentication (register/login/logout)',
-      'Responsive design for all devices',
     ],
   },
 };
