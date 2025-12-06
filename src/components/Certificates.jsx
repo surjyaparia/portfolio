@@ -8,7 +8,7 @@ const certificates = [
   { name: 'Artificial Intelligence Fundamentals', issuer: 'IBM', image: 'https://res.cloudinary.com/ddwglz4bx/image/upload/v1748591576/vuki56qroxwplobewdxj.jpg' },
   { name: 'AI-ML Virtual Internship', issuer: 'EduSkills', image: 'https://res.cloudinary.com/ddwglz4bx/image/upload/v1749703673/hngjr7mqpbkt3fhuvucv.jpg' },
   { name: 'AWS Academy Graduate - Generative Al Foundations', issuer: 'AWS academy', image: 'https://res.cloudinary.com/ddwglz4bx/image/upload/v1763742659/l40ix4yybzfhjr7k1iyg.jpg' },
-];
+]; 
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
