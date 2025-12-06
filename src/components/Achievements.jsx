@@ -13,7 +13,7 @@ const achievements = [
       },
       {
         name: '100 Days',
-        imageUrl: 'https://assets.leetcode.com/static_assets/marketing/2024-100-new.gif',
+        imageUrl: 'https://assets.leetcode.com/static_assets/others/25100.gif',
         alt: '100 Days Badge'
       },
       {
